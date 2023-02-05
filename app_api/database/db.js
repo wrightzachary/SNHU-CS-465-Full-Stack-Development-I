@@ -6,12 +6,15 @@ const readline = require('readline');
 
 mongoose.set('useUnifiedTopology', true);
 
-const connect = () => {
-    setTimeout (() => mongoose.connect(dbURI, {
-        useNewUrlParser: true, 
-        useCreateIndex: true,
-    }), 1000);
-}
+// const connect = () => {
+//     setTimeout (() => mongoose.connect(dbURI, {
+//         useNewUrlParser: true, 
+//         useCreateIndex: true,
+//     }), 1000);
+// }
+
+mongoose.connect(dbURI, { useNewUrlParser: true, useCreateIndex: true});
+const connect = mongoose.connection;
 
 mongoose.connection.on('connected', () => {
   console.log(`Mongoose connected to ${dbURI}`);
