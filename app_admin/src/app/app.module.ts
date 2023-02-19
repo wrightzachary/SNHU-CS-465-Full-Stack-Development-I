@@ -13,6 +13,7 @@ import { EditTripComponent } from './edit-trip/edit-trip.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { DeleteTripComponent } from './delete-trip/delete-trip.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HomeComponent } from './home/home.component';
     EditTripComponent,
     NavbarComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    DeleteTripComponent
   ],
   imports: [
     BrowserModule,
