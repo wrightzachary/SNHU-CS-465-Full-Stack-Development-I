@@ -1,2 +1,15 @@
-# SNHU-CS-465-Full-Stack-Development-I
-Full Stack Development I is course one of a two course capstone for my B.S. Computer Science using the MEAN stack.
+<h1>Architecture</h1>
+
+This project uses multiple front end development libraries and languages, this includes Express, HTML, Javascript, and single-page applications (SPA). To create a layout for the pages HTML is used whether it is full HTML code or just a couple lines that give specific functionality combined with the the JavaScript like buttons or forms. Submitting forms requires the use of API calls that allows for CRUD operations through callbacks; this is also assisted witht he use of Express. Node in this project works as the server for communitcation fromt he back end and front end. The SPA is used for admins of Travlr Getaways to create, update, and delete trips currently provided by Travlr Getaways. These CRUD operations speak to the NoSQL MongooseDB database used using API calls spoken above earlier. The backen also uses JSON files that allow three trips to be present at all times along with the trips in the database. The stack used for this project is known as the MEAN stack which uses MongoDB, Express, Angular, and NodeJS. 
+
+<h1>Functionality</h1>
+
+JSON differs from JavaScript since JavaScript is a programming language and JSON is not. JSON is used to provide data to be be displayed, used as input, or given back as output. JSON data was used in this project by using JSON files to display content on the client-side browser. JSON files allows for a ease of use program that allowd content to be remain easily updatable where the JSON file content updates instead of the HTML por JavaScript. JSON ties to the front end and back endby allowing data to be dynamically displayed from these JSON files insteand of from the database to allow for a faster application with API calls not being neccessay to display this specific data. 
+
+<h1>Testing</h1>
+
+Testing for tyhis application was conducted in two ways. The first way is using GET, PUT, POST, and DELETE calls in Postman utilizing API calls. The second way is manually testing the buttons and forms in the browser to make sure the end-user can use this application with no issues. The GET method is used to retreive data from endpoints identified within the code. The PUT method allows users to update existing data in the databes while the POST method allows users to create data to be seeded in the database. Finally, the DELETE method is used to remove objects from the database. The SPA admin page has security that utilizes JSON Web Token (JWT) to confirm the identity of the use rof the admin page. Using Auth instead of payload allows each API call to see if a user is logged in or not, which would confirm the identity of the user. Even using endppoints in Postman is not possible unless the JWT token is recently generated from a login call and added to the POST, PUT, or DELETE call as a bearer token. 
+
+<h1>Reflection</h1>
+
+This course halped in my my professional goals as helping me be more diversified in the frameworks, languages, and libraries in which I have experience in. Using th MEAN stack in this application helped me get a better understanding and hands on experience with Angualr which is commonly used by Full Stack Developers across companies in the tech field. 
